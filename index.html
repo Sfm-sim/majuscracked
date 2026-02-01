@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Dash | Premium Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0b10;
+            --primary: #00f2ff;
+            --secondary: #8a2be2;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Premium Navbar */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(15px);
+            background: var(--glass);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .logo { font-family: 'Russo One', sans-serif; font-size: 1.5rem; letter-spacing: 2px; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1b26 0%, #0a0b10 100%);
+            position: relative;
+        }
+
+        .hero h1 {
+            font-family: 'Russo One', sans-serif;
+            font-size: 5rem;
+            margin: 0;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(0, 242, 255, 0.3));
+        }
+
+        .hero p { font-size: 1.2rem; opacity: 0.8; max-width: 600px; margin: 20px 0; }
+
+        /* Installation Buttons */
+        .cta-container { display: flex; gap: 20px; margin-top: 30px; }
+
+        .btn {
+            padding: 15px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid var(--glass-border);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: black;
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.4);
+        }
+
+        .btn-primary:hover { transform: scale(1.05); box-shadow: 0 0 50px rgba(0, 242, 255, 0.6); }
+
+        .btn-outline { background: var(--glass); color: white; backdrop-filter: blur(5px); }
+        .btn-outline:hover { background: rgba(255, 255, 255, 0.1); }
+
+        /* Decorative Shapes */
+        .cube {
+            position: absolute;
+            width: 100px; height: 100px;
+            border: 2px solid var(--primary);
+            opacity: 0.1;
+            animation: float 10s infinite linear;
+        }
+
+        @keyframes float {
+            from { transform: rotate(0deg) translate(50px) rotate(0deg); }
+            to { transform: rotate(360deg) translate(50px) rotate(-360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GEOMETRY DASH</div>
+        <div class="nav-links">
+            <a href="#features" style="color:white; text-decoration:none; margin-right:30px;">Features</a>
+            <a href="#download" class="btn btn-outline" style="padding: 10px 20px;">Get Started</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="cube" style="top:20%; left:10%;"></div>
+        <div class="cube" style="bottom:15%; right:15%; border-color:var(--secondary);"></div>
+        
+        <h1>JUMP. FLY. FLIP.</h1>
+        <p>Experience the definitive rhythm-based action platformer. Push your skills to the limit as you jump, fly and flip your way through dangerous passages and spiky obstacles.</p>
+        
+        <div class="cta-container" id="download">
+            <a href="https://mega.nz/file/jdlERYDB#i5aFjjKKNXn1jUduIjkuRrWqLGlrlLqg71RdmoLKqMM" class="btn btn-primary">Install Cracked</a>
+        </div>
+    </section>
+
+</body>
+</html>
